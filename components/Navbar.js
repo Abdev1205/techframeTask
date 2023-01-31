@@ -11,7 +11,7 @@ function Navbar() {
     const [menuOn,setMenuOn] = useState(false)
     return (
         <>
-            <div className="navbar  flex flex-row py-3 relative justify-between w-full border-b-2">
+            <div className="navbar sticky top-0 z-50  flex flex-row py-3 bg-background-900 justify-between w-full border-b-2 ">
 
                 <div className="flex flex-row">
                     <div className="search flex flex-row items-center mx-5 py-2.5 px-3 cursor-pointer rounded-md shadow bg-white">
@@ -24,12 +24,12 @@ function Navbar() {
                 
                 <div className={`nav-links  flex lg:translate-x-0  xl:flex-row lg:flex-row lg:relative lg:h-auto lg:bg-background-900 lg:py-0 lg:px-0 lg:mt-0 duration-300 absolute h-screen py-5 px-10 w-6/12  -mt-3  flex-col bg-white ${menuOn ? null : "-translate-x-full"}  `}>
                     <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide ">Dashboard</li>
-                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-zinc-400">My Tasks</li>
-                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-zinc-400">Reporting</li>
-                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-zinc-400">Portfolio</li>
-                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-zinc-400">Goals</li>
+                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-zinc-400 hover:text-black duration-100">My Tasks</li>
+                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-zinc-400 hover:text-black duration-100">Reporting</li>
+                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-zinc-400 hover:text-black duration-100">Portfolio</li>
+                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-zinc-400 hover:text-black duration-100">Goals</li>
                 </div>
-                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-black flex lg:hidden"><HiMenu onClick={()=>setMenuOn(!menuOn)} className="text-2xl" /></li>
+                    <li className="list-none py-2 px-2 cursor-pointer text-sm font-semibold tracking-wide  text-black flex lg:hidden"><HiMenu onClick={()=>setMenuOn(!menuOn)} className="text-2xl select-none" /></li>
 
                 <div className="nav-user  flex-row items-center mx-2 hidden lg:flex">
                     <span><MdFolderOpen className="text-2xl mx-1 cursor-pointer  text-zinc-400" /></span>

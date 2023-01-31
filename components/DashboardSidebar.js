@@ -110,9 +110,9 @@ function DashboardSidebar() {
 
   return (
     <>
-      <div className={`hidden flex-col md:flex bg-background-900 h-auto duration-300   ${dashboardOpen ? 'w-60':'w-20' } `}>
+      <div className={`hidden   flex-col md:flex bg-background-900 h-auto duration-300   ${dashboardOpen ? 'w-60':'w-20' } `}>
 
-        <div className="dashboard-head py-5 flex flex-row justify-between px-5 items-center  border-b-2">
+        <div className="dashboard-head sticky top-0 bg-background-900 py-5 flex flex-row justify-between px-5 items-center  border-b-2">
           <h1 className={`text-xl font-semibold duration-300 ${dashboardOpen ? null : 'hidden' } `}>Dashboard</h1>
           <MdMenuOpen onClick={Menu} className={`text-2xl duration-100 text-zinc-400 cursor-pointer ${dashboardOpen ? null : 'rotate-180' }`} />
         </div>

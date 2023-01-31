@@ -17,11 +17,11 @@ function TaskBoard() {
 
                 <div className="task-board-links hidden  flex-row md:flex">
                     <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide border-b-2 border-primary-900">Timeline</li>
-                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400">Calendar</li>
-                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400">Dashboard</li>
-                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400">Progress</li>
-                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400">Forms</li>
-                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400">more</li>
+                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400 hover:text-black duration-100 border-b-2 hover:border-primary-900">Calendar</li>
+                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400 hover:text-black duration-100 border-b-2 hover:border-primary-900">Dashboard</li>
+                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400 hover:text-black duration-100 border-b-2 hover:border-primary-900">Progress</li>
+                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400 hover:text-black duration-100 border-b-2 hover:border-primary-900">Forms</li>
+                    <li className="list-none py-3 px-2 cursor-pointer text-sm font-semibold tracking-wide text-zinc-400 hover:text-black duration-100 border-b-2 hover:border-primary-900">more</li>
                 </div>
                 <div className=" items-center -space-x-2 overflow-hidden hidden lg:flex  px-2">
 
